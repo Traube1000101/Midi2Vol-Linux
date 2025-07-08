@@ -1,0 +1,11 @@
+[Unit]
+Description=Midi2Vol user service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/bin/midi2vol.py -p
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+
